@@ -1,0 +1,120 @@
+
+<ngb-carousel class="announcements-carousel">
+    <ng-template ngbSlide>
+        <div class="carousel-child" id="carousel-test">
+            <div class="text-test">
+                <div>
+                    <h1>Announcement Template</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, dolore.</p>
+            </div>
+            <div class="picture-test">
+                <img src="assets/img/theme/bookNcoffee.PNG" alt="">
+            </div>
+        </div>
+    </ng-template>
+    <ng-template ngbSlide>
+        <div class="carousel-child" id="carousel-test1">
+            <div class="text-test">
+                <div>
+                    <h1 style="color: black !important; ">Read In Nature</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, dolore.</p>
+            </div>
+            <div class="picture-test">
+                <img src="asse" alt="">
+            </div>
+        </div>
+    </ng-template>
+    <!--   <ng-template ngbSlide>
+        <img class="carousel-child" src="assets/img/theme/img-2-1200x1000.jpg" alt="Second slide">
+    </ng-template>
+    <ng-template ngbSlide>
+        <img class="carousel-child" src="assets/img/theme/img-1-1200x1000.jpg" alt="Third slide">
+    </ng-template>  -->
+</ngb-carousel>
+
+
+
+<div class="grey_">
+
+    <div class="card-group">
+        <div class="card" *ngFor=" let Announcement of announcements, let i = index " (click)="openDialog(Announcement)">
+            <div class="overflow">
+                <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" [src]="Announcement.photo"
+                    data-holder-rendered="true">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{Announcement.title}}</h5>
+                <p class="card-text">{{Announcement.content}}</p>
+                <p class="card-text"><small class="text-muted">{{Announcement.date}} </small></p>
+            </div>
+        </div>
+
+        <!-- <div class="card">
+        <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180"
+            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22174%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20174%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17ae9ad3f16%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17ae9ad3f16%22%3E%3Crect%20width%3D%22174%22%20height%3D%22180%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2261.046875%22%20y%3D%2294.5%22%3E174x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+            data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180"
+            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22174%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20174%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17ae9ad3f1b%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17ae9ad3f1b%22%3E%3Crect%20width%3D%22174%22%20height%3D%22180%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2261.046875%22%20y%3D%2294.5%22%3E174x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+            data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div> -->
+    </div>
+    <div class="blog-center">
+        <div class="blog-post">
+            <div class="blog-post_img">
+                <div class="blog-big-date">
+                    <p id="month-date">24/7</p>
+                    <p id="time-date">16:00 - 21:20</p>
+                </div>
+
+            </div>
+            <div class="blog-post_info">
+                <div class="blog-post_date">
+                    <span>Sunday</span>
+                    <span>july 25 2021</span>
+                </div>
+                <h1 class="blog-post_title">Blue card Title</h1>
+                <p class="blog-post_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nesciunt
+                    numquam repudiandae, eius earum itaque aliquam. Magni, consequatur eligendi culpa quis reiciendis
+                    recusandae ducimus alias!</p>
+                <a class="blog-post_cta">show more</a>
+                <!--   <a href="#" class="btn btn-btn-outline-success">Go somewhere</a> -->
+            </div>
+        </div>
+    </div>
+    <div class="blog-center">
+        <div class="blog-post blog-post-alpha">
+            <div class="blog-post_img blog-post_img-alpha">
+                <img src="//images01.nicepage.com/c461c07a441a5d220e8feb1a/fe2b4f4f73b2545cb746601b/spirituality-religion-hands-folded-prayer-holy-bible-church-concept-faith_1150-148781.jpg"
+                    alt="">
+            </div>
+            <div class="blog-post_info">
+                <div class="blog-post_date">
+                    <span>Sunday</span>
+                    <span>july 25 2021</span>
+                </div>
+                <h1 class="blog-post_title">Blue card Title</h1>
+                <p class="blog-post_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nesciunt
+                    numquam repudiandae, eius earum itaque aliquam. Magni, consequatur eligendi culpa quis reiciendis
+                    recusandae ducimus alias!</p>
+                <a class="blog-post_cta">show more</a>
+                <!--   <a href="#" class="btn btn-btn-outline-success">Go somewhere</a> -->
+            </div>
+
+        </div>
+    </div>
+</div>

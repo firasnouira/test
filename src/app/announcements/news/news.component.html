@@ -1,0 +1,77 @@
+<div class="new-books">
+    <div class="slider-text" [ngClass]="{'slider-text-after' : scrolled == true}">
+        <div style="min-height: 75%; width: 10px; background-color: rgba(27, 27, 133, 0.527); "></div>
+        <p style="margin-left: 10px; margin-top: 5px;">NEW BOOKS</p>
+
+    </div>
+    <div class="post-slider slider  " [ngClass]="{'slider-after' : scrolled == true}">
+        <i class="fas fa-chevron-left prev"></i>
+        <i class="fas fa-chevron-right next"></i>
+
+        <div class="post-wrapper">
+
+            <div class="post" *ngFor="let number of [0,1,2,3,4]">
+                <img src="https://alltimedesign.com/wp-content/uploads/2020/12/book-hardcover-mockup_125540-225.jpg"
+                    alt="" class="slider-image">
+                <div class="post-info">
+                    <h4><a href="single.html">Book Name </a></h4>
+                    <i class="far fa-user"> Awa idk </i>
+                    &nbsp;
+                    <i class="far fa-calendar"> July 17, 2021</i>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<img src="//images01.nicepage.com/c461c07a441a5d220e8feb1a/fe2b4f4f73b2545cb746601b/spirituality-religion-hands-folded-prayer-holy-bible-church-concept-faith_1150-148781.jpg"
+    (click)="scrolled = true" class="big-background">
+<div class="collab">
+    <div>
+        <div class="collab-title">
+
+            <h1>ARGON LIBRARY</h1>
+            <div></div>
+        </div>
+
+        <div class="library-collab">
+            <div>
+                <img
+                    src="//images01.nicepage.com/c461c07a441a5d220e8feb1a/fe2b4f4f73b2545cb746601b/spirituality-religion-hands-folded-prayer-holy-bible-church-concept-faith_1150-148781.jpg">
+                <p>Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Orci ac auctor
+                    augue mauris augue neque. Nunc lobortis mattis aliquam faucibus purus in massa. Porta lorem
+                    mollis aliquam ut porttitor leo. Ut etiam sit amet nisl purus in.<br>
+                </p>
+                <a href="https://nicepage.com/c/slider-html-templates">learn more</a>
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <div class="library-collab">
+            <div>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Ministry_of_Education_%28Singapore%29_logo.svg/1200px-Ministry_of_Education_%28Singapore%29_logo.svg.png">
+                <p>Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Orci ac auctor
+                    augue mauris augue neque. Nunc lobortis mattis aliquam faucibus purus in massa. Porta lorem
+                    mollis aliquam ut porttitor leo. Ut etiam sit amet nisl purus in.<br>
+                </p>
+                <a href="https://nicepage.com/c/slider-html-templates">learn more</a>
+            </div>
+        </div>
+        <div class="collab-title">
+
+            <h1>Minestry of education </h1>
+            <div></div>
+        </div>
+
+    </div>
+
+</div>

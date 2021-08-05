@@ -1,0 +1,873 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
+
+
+</head>
+
+<div class="invisible-cmd" (mouseenter)=' toggled = true' ></div>
+<div class="sideBar" [ngClass]="{'left-toggle' : toggled }" (mouseenter)=' toggled = true' (mouseleave)='toggled = false' >
+    <p class="wordStyle">ANNOUNCEMENTS</p>
+    <div class="announcements-cathegories">
+        <div (click)="route('events')">events</div>
+        <div (click)="route('news')">news</div>
+        <div (click)="route('new-books')">new books</div>
+    </div>
+</div>
+
+
+
+<!-- http://www.crossing-swords.com/wp-content/uploads/2016/01/crowd-shot-1.jpg -->
+
+
+
+
+<div style="margin-left: 20%;"><router-outlet ></router-outlet></div>
+
+<!-- <div class="new-books">
+    <div class="slider-text" [ngClass]="{'slider-text-after' : scrolled == true}">
+        <div style="min-height: 75%; width: 10px; background-color: rgba(27, 27, 133, 0.527); "></div>
+        <p style="margin-left: 10px; margin-top: 5px;">NEW BOOKS</p>
+
+    </div>
+    <div class="post-slider slider  " [ngClass]="{'slider-after' : scrolled == true}">
+        <i class="fas fa-chevron-left prev"></i>
+        <i class="fas fa-chevron-right next"></i>
+
+        <div class="post-wrapper">
+
+            <div class="post" *ngFor="let number of [0,1,2,3,4]">
+                <img src="https://alltimedesign.com/wp-content/uploads/2020/12/book-hardcover-mockup_125540-225.jpg"
+                    alt="" class="slider-image">
+                <div class="post-info">
+                    <h4><a href="single.html">Book Name </a></h4>
+                    <i class="far fa-user"> Awa idk </i>
+                    &nbsp;
+                    <i class="far fa-calendar"> July 17, 2021</i>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+</div>
+
+ -->
+
+
+
+
+
+<!-- ***************imported **********************
+
+<section class="u-clearfix u-palette-3-base u-section-1" id="carousel_8f8b">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout">
+                <div class="u-layout-row">
+                    <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
+                        <div class="u-container-layout u-container-layout-1">
+                            <h3 class="u-text u-text-body-alt-color u-text-default u-text-1">Reading<br>Compaign
+                            </h3>
+                            <p class="u-text u-text-body-alt-color u-text-default u-text-2">User generated content in
+                                real-time will have multiple touchpoints for offshoring.</p>
+                        </div>
+                    </div>
+                    <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-2">
+                        <div class="u-container-layout u-container-layout-2">
+                            <p class="u-text u-text-body-alt-color u-text-default u-text-3">Bring to the table win-win
+                                survival strategies to ensure proactive domination. At the end of the day, going
+                                forward, a new normal that has evolved from generation X is on the runway heading
+                                towards a streamlined cloud solution.</p>
+                        </div>
+                    </div>
+                    <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-20 u-image-1"
+                        data-image-width="1280" data-image-height="914">
+                        <div class="u-border-10 u-border-white u-container-layout u-container-layout-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="u-align-center u-clearfix u-image u-valign-middle-lg u-section-2" id="carousel_bad6">
+    <div class="u-clearfix u-expanded-width-sm u-expanded-width-xs u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+            <div class="u-layout-row">
+                <div
+                    class="u-container-style u-image u-layout-cell u-left-cell u-size-32-md u-size-32-sm u-size-32-xs u-size-34-lg u-size-34-xl u-image-1">
+                    <div class="u-container-layout u-valign-bottom u-container-layout-1"></div>
+                </div>
+                <div
+                    class="u-align-left u-container-style u-layout-cell u-right-cell u-size-26-lg u-size-26-xl u-size-28-md u-size-28-sm u-size-28-xs u-layout-cell-2">
+                    <div class="u-container-layout u-container-layout-2">
+                        <h3 class="u-text u-text-1">From problem to solution.</h3>
+                        <h1 class="u-text u-text-palette-3-base u-text-2">Critical thinking throught reading event</h1>
+                        <ul class="u-text u-text-body-alt-color u-text-default u-text-3">
+                            <li>Strategic Planning&nbsp;</li>
+                            <li>Cost Effective Solutions</li>
+                            <li>Full Disaster Testing&nbsp;</li>
+                            <li>Complete System Functionality</li>
+                            <li>Accessible Virtually Anywhere</li>
+                            <li>Comprehensive Maintenance<br>
+                            </li>
+                        </ul>
+                        <a href="#" class="u-btn u-button-style u-palette-3-base u-btn-1">view all</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="u-align-center u-clearfix u-palette-3-base u-valign-middle-lg u-section-3" id="sec-b82a">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width-sm u-expanded-width-xs u-gutter-0 u-layout-wrap u-layout-wrap-1">
+            <div class="u-gutter-0 u-layout">
+                <div class="u-layout-row">
+                    <div class="u-align-left u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                        <div class="u-container-layout u-container-layout-1">
+                            <h3 class="u-text u-text-1">From problem to solution.</h3>
+                            <h1 class="u-text u-text-palette-3-base u-text-2">Reading strategy</h1>
+                            <ul class="u-text u-text-body-alt-color u-text-default u-text-3">
+                                <li>Strategic Planning&nbsp;</li>
+                                <li>Cost Effective Solutions</li>
+                                <li>Full Disaster Testing&nbsp;</li>
+                                <li>Complete System Functionality</li>
+                                <li>Accessible Virtually Anywhere</li>
+                                <li>Comprehensive Maintenance<br>
+                                </li>
+                            </ul>
+                            <a href="#" class="u-btn u-button-style u-palette-3-base u-btn-1">view all</a>
+                        </div>
+                    </div>
+                    <div class="u-align-left u-container-style u-image u-layout-cell u-size-30 u-image-1"
+                        data-image-width="854" data-image-height="1280">
+                        <div class="u-container-layout u-valign-bottom u-container-layout-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+ -->
+
+
+
+
+
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<!-- Slick Carousel -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+
+    ClassicEditor.create(document.querySelector("#body"), {
+        toolbar: [
+            "heading",
+            "|",
+            "bold",
+            "italic",
+            "link",
+            "bulletedList",
+            "numberedList",
+            "blockQuote"
+        ],
+        heading: {
+            options: [
+                { model: "paragraph", title: "Paragraph", class: "ck-heading_paragraph" },
+                {
+                    model: "heading1",
+                    view: "h1",
+                    title: "Heading 1",
+                    class: "ck-heading_heading1"
+                },
+                {
+                    model: "heading2",
+                    view: "h2",
+                    title: "Heading 2",
+                    class: "ck-heading_heading2"
+                }
+            ]
+        }
+    }).catch(error => {
+        console.log(error);
+    });
+
+</script>
+
+
+
+
+<style>
+    * {
+        box-sizing: border-box
+    }
+
+    html,
+    body {
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        background: #f6f6f6;
+        font-family: 'Lora', serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Candal', serif;
+        color: #5c5b5b;
+        margin: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .clearfix::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .btn {
+        padding: .5rem 1rem;
+        background: #006669;
+        color: white;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        font-size: 1.08em;
+        font-family: 'Lora', serif;
+    }
+
+    .btn-big {
+        padding: .7rem 1.3rem;
+        line-height: 1.3rem;
+    }
+
+    .btn:hover {
+        color: white !important;
+        background: #005255;
+    }
+
+    .text-input {
+        padding: .7rem 1rem;
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #e0e0e0;
+        outline: none;
+        color: #444;
+        line-height: 1.5rem;
+        font-size: 1.2em;
+        font-family: 'Lora', serif;
+    }
+
+    .msg {
+        width: 100%;
+        margin: 5px auto;
+        padding: 8px;
+        border-radius: 5px;
+        list-style: none;
+    }
+
+    .success {
+        color: #3a6e3a;
+        border: 1px solid #3a6e3a;
+        background: #bcf5bc;
+    }
+
+    .error {
+        color: #884b4b;
+        border: 1px solid #884b4b;
+        background: #f5bcbc;
+    }
+
+    /* NAVBAR */
+
+    header {
+        background: #008489;
+        height: 66px;
+    }
+
+    header * {
+        color: white;
+    }
+
+    header .logo {
+        float: left;
+        height: inherit;
+        margin-left: 2em;
+    }
+
+    header .logo-text {
+        margin: 9px;
+        font-family: 'Candal', serif;
+    }
+
+    header .logo-text span {
+        color: #05f7ff;
+    }
+
+    header ul {
+        float: right;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+
+    header ul li {
+        float: left;
+        position: relative;
+    }
+
+    header ul li ul {
+        position: absolute;
+        top: 66px;
+        right: 0px;
+        width: 180px;
+        display: none;
+        z-index: 88888;
+    }
+
+    header ul li:hover ul {
+        display: block;
+    }
+
+    header ul li ul li {
+        width: 100%;
+    }
+
+    header ul li ul li a {
+        padding: 10px;
+        background: white;
+        color: #444;
+    }
+
+    header ul li ul li a.logout {
+        color: red;
+    }
+
+    header ul li ul li a:hover {
+        background: #d5d6d6;
+    }
+
+    header ul li a {
+        display: block;
+        padding: 21px;
+        font-size: 1.1em;
+        text-decoration: none;
+    }
+
+    header ul li a:hover {
+        background: #006669;
+        transition: 0.5s;
+    }
+
+    header .menu-toggle {
+        display: none;
+    }
+
+    .page-wrapper {
+        min-height: 100%;
+    }
+
+    .page-wrapper a:hover {
+        color: #006669;
+    }
+
+    /* POST SLIDER */
+
+    .post-slider {
+        position: relative;
+    }
+
+    .post-slider .slider-title {
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .post-slider .next {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        font-size: 2em;
+        color: #006669;
+        cursor: pointer;
+    }
+
+    .post-slider .prev {
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        font-size: 2em;
+        color: #006669;
+        cursor: pointer;
+    }
+
+    .post-slider .post-wrapper {
+        width: 84%;
+        height: 350px;
+        margin: 0px auto;
+        overflow: hidden;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .post-slider .post-wrapper .post {
+        width: 300px;
+        height: 330px;
+        margin: 0px 10px;
+        display: inline-block;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+    }
+
+    .post-slider .post-wrapper .post .post-info {
+        height: 130px;
+        padding: 0px 5px;
+    }
+
+    .post-slider .post-wrapper .post .slider-image {
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    /* CONTENT */
+
+    .content {
+        width: 90%;
+        margin: 30px auto 30px;
+    }
+
+    .content .main-content {
+        width: 70%;
+        float: left;
+    }
+
+    .content .main-content.single {
+        background: white;
+        padding: 20px 50px;
+        font-size: 1.1em;
+        border-radius: 5px;
+    }
+
+    .content .main-content.single .post-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .content .main-content .post {
+        width: 95%;
+        height: 270px;
+        margin: 20px auto;
+        border-radius: 5px;
+        background: white;
+        position: relative;
+    }
+
+    .content .popular .post {
+        border-top: 1px solid #e0e0e0;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+    .content .popular .post img {
+        height: 60px;
+        width: 75px;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .content .main-content .post .post-preview i {
+        color: #757575;
+        font-size: .8em;
+    }
+
+    .content .main-content .post .preview-text {
+        line-height: 1.5em;
+        font-size: 1.03em;
+        color: #444;
+    }
+
+    .content .main-content .post .read-more {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        border: 1px solid #006669;
+        background: transparent;
+        border-radius: 0px;
+        color: #006669 !important;
+    }
+
+    .content .main-content .post .read-more:hover {
+        background: #006669;
+        color: white !important;
+        transition: .25s;
+    }
+
+    .content .main-content .post .post-image {
+        width: 40%;
+        height: 100%;
+        float: left;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .content .main-content .post .post-preview {
+        width: 60%;
+        padding: 10px;
+        float: right;
+    }
+
+    .content .main-content .recent-post-title {
+        margin: 20px;
+    }
+
+    .content .sidebar {
+        width: 30%;
+        float: left;
+    }
+
+    .content .sidebar.single {
+        padding: 0px 10px;
+    }
+
+    .content .sidebar .section {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content .sidebar .section .section-title {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .content .sidebar .section.search {
+        margin-top: 80px;
+    }
+
+    .content .sidebar .section.topics ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .content .sidebar .section.topics ul li a {
+        display: block;
+        padding: 15px 0px 15px 0px;
+        border-bottom: 1px solid #e0e0e0;
+        transition: all 0.3s;
+    }
+
+    .content .sidebar .section.topics ul li a:hover {
+        padding-left: 10px;
+        transition: all 0.3s;
+    }
+
+    /* AUTH PAGES */
+
+    .auth-content {
+        width: 30%;
+        margin: 50px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 5px;
+    }
+
+    .auth-content .form-title {
+        text-align: center;
+    }
+
+    .auth-content form div {
+        margin-bottom: 10px;
+    }
+
+    .auth-content form p {
+        text-align: center;
+    }
+
+    .auth-content form p a {
+        text-decoration: underline;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        background: #303036;
+        color: #d3d3d3;
+        height: 400px;
+        position: relative;
+    }
+
+    .footer .footer-content {
+        height: 350px;
+        display: flex;
+    }
+
+    .footer .footer-content .footer-section {
+        flex: 1;
+        padding: 25px;
+    }
+
+    .footer .footer-content h1,
+    .footer .footer-content h2 {
+        color: white;
+    }
+
+    .footer .footer-content .about h1 span {
+        color: #05f7ff;
+    }
+
+    .footer .footer-content .about .contact span {
+        display: block;
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
+
+    .footer .footer-content .about .socials a {
+        border: 1px solid gray;
+        width: 45px;
+        height: 41px;
+        padding-top: 5px;
+        margin-right: 5px;
+        text-align: center;
+        display: inline-block;
+        font-size: 1.3em;
+        border-radius: 5px;
+        transition: all .3s;
+    }
+
+    .footer .footer-content .about .socials a:hover {
+        border: 1px solid white;
+        color: white;
+        transition: all .3s;
+    }
+
+    .footer .footer-content .links ul a {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        transition: all .3s;
+    }
+
+    .footer .footer-content .links ul a:hover {
+        color: white;
+        margin-left: 15px;
+        transition: all .3s;
+    }
+
+    .footer .footer-content .contact-form .contact-input {
+        background: #272727;
+        color: #bebdbd;
+        margin-bottom: 10px;
+        line-height: 1.5rem;
+        padding: .9rem 1.4rem;
+        border: none;
+    }
+
+    .footer .footer-content .contact-form .contact-input:focus {
+        background: #1a1a1a;
+    }
+
+    .footer .footer-content .contact-form .contact-btn {
+        float: right;
+        font-size: 1.1em;
+        font-family: 'Lora', serif;
+    }
+
+    .footer .footer-bottom {
+        background: #343a40;
+        color: #686868;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        padding-top: 20px;
+    }
+
+    /* MEDIA QUERIES */
+
+    @media only screen and (max-width: 934px) {
+        .content {
+            width: 100%;
+        }
+
+        .auth-content {
+            width: 50%;
+        }
+
+        .content .main-content .post {
+            width: 100%;
+        }
+
+        .content .main-content {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .content .sidebar {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .content .sidebar .section.search {
+            margin-top: 30px;
+        }
+
+        .footer {
+            height: auto;
+        }
+
+        .footer .footer-content {
+            height: auto;
+            flex-direction: column;
+        }
+
+        .footer .footer-content .contact-form {
+            padding-bottom: 90px;
+        }
+
+        .footer .footer-content .contact-form .contact-btn {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 770px) {
+        header {
+            position: relative;
+        }
+
+        .auth-content {
+            width: 60%;
+
+        }
+
+        .main-content-wrapper {
+            padding: 10px;
+        }
+
+        header ul {
+            width: 100%;
+            background: #0E94A0;
+            max-height: 0px;
+            overflow: hidden;
+        }
+
+        .showing {
+            max-height: 100em;
+        }
+
+        header ul li {
+            width: 100%;
+        }
+
+        header ul li ul {
+            position: static;
+            display: block;
+            width: 100%;
+        }
+
+        header ul li ul li a {
+            padding: 10px;
+            background: #0E94A0;
+            color: white;
+            padding-left: 50px;
+        }
+
+        header ul li ul li a:hover {
+            background: #006669;
+        }
+
+        header ul li ul li a.logout {
+            color: red;
+        }
+
+        header .menu-toggle {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 1.9em;
+        }
+
+        header .logo {
+            margin-left: .5em;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .content .main-content .post {
+            height: auto;
+        }
+
+        .auth-content {
+            width: 90%;
+
+        }
+
+        .content .main-content.single {
+            padding: 10px 20px;
+        }
+
+        .content .main-content .post .post-image {
+            width: 100%;
+        }
+
+        .content .main-content .post .post-preview {
+            width: 100%;
+        }
+
+        .content .main-content .post .read-more {
+            position: static;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .post-slider .next {
+            right: 10px;
+        }
+
+        .post-slider .prev {
+            left: 10px;
+        }
+    }
+</style>

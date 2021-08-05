@@ -1,0 +1,166 @@
+body { margin-top:30px; }
+
+.notifContainer{
+    background-color:#fffffe !important ;
+    padding: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav {
+    margin-top: 15px;
+}
+ 
+img {
+    width: 100%;
+    height: 460px;
+    
+} 
+  .container {
+   position: relative;
+   overflow: hidden;
+   
+  
+  }
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    z-index: 3;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%; 
+   
+  }
+  
+  
+  .texte {
+    white-space: pre-line;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .texte2 {
+    white-space: pre-line;
+    color: rgb(23, 75, 187);
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+  }
+.notificationDiv {
+  position: relative;
+  margin-left: 90%;
+  margin-bottom: 10px;
+}
+.notificationBar{
+  width: 350px;
+	height: auto;
+	background: rgb(0, 0, 0);
+ 
+	border-radius: 10px;
+	box-shadow: -3px 3px 20px 3px rgb(0 0 0 / 43%);
+	margin: 12px auto 0;
+	padding: 10px;
+  max-height: 510px;
+  overflow: scroll;
+  overflow-x: hidden;
+  
+
+
+}
+.item{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 340px;
+  max-height: 135px;
+  word-wrap: break-word;
+  white-space: pre-line;
+  overflow:hidden;
+  border-radius: 11px;
+}
+
+.item:hover{
+  background-color: #888;
+
+}
+
+.notificationTitle{
+  flex-grow: 1;
+  flex-basis: 23px;
+  font-size: 23px;
+}
+.notificationContent{
+  flex-grow: 3;
+  flex-basis: 75px;
+}
+.notificationDate{
+  flex-grow: 1;
+  text-align: end;
+
+}
+.notificationDiv i:hover{
+  cursor: pointer;
+  
+}
+ 
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+} 
+
+  
+#overlay {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  z-index: -1;
+  position:absolute;
+  top:50px;
+  left:50px;
+}
+
+#originalDiv {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  z-index: 1;
+  position:absolute;
+  top:0px;
+  left:0px;
+}
