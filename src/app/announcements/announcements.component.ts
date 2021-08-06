@@ -21,7 +21,7 @@ export class AnnouncementsComponent implements OnInit {
 
   ngOnInit(): void {
     this.router.navigate(["events"],{relativeTo:this.activR}); 
-    $(document).ready(function(){
+    /* $(document).ready(function(){
       alert('I am Called From jQuery');
       console.log("jQ works !!!!!!!!!!!!!!!!!!")
       });
@@ -67,7 +67,7 @@ export class AnnouncementsComponent implements OnInit {
                 // instead of a settings object
             ]
         });
-    });
+    }); */
    // END JQUERY
   
 

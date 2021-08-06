@@ -3,9 +3,7 @@ import { map } from 'rxjs/operators'
 import { AnnouncementsService } from 'src/app/services/announcements.service';
 import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
 import {MatdialogComponent,} from '../matdialog/matdialog.component';
-
 import { data } from 'jquery';
-
 @Component({
     selector: 'app-events',
     templateUrl: './events.component.html',
@@ -16,9 +14,7 @@ export class EventsComponent implements OnInit {
     constructor(private announcementService: AnnouncementsService, private matDialog: MatDialog) { }
 
     ngOnInit(): void {
-        this.getAllAnnouncements();
-       
-
+        this.getAllAnnouncements();      
     }
     getAllAnnouncements() {
         this.announcementService.getAnnouncements().snapshotChanges().pipe(map(changes => changes.map(c => ({ key: c.payload.key, ...c.payload.val() })))).subscribe(rs => {
