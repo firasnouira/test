@@ -14,7 +14,7 @@ export class Profile {
     activeTrackHours: string;
     books: Array<{ id: number, notes: string, finished: boolean }>;
     friends: Array<string>;
-    reservation : Array<{name:string , comers: number, numberoftable : number,  }>;
     
+
 }
 
