@@ -2,7 +2,7 @@ import {NgModule, Component, OnInit } from '@angular/core';
 
 
 import { ActivatedRoute, Router } from '@angular/router';
-declare var $:any;
+/* declare var $:any; */
 
 
 
